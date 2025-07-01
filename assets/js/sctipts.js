@@ -1,3 +1,7 @@
+tailwind.config = {
+    darkMode: 'class'
+};
+
 const toggleBtn = document.getElementById("themeToggle");
 const themeIcon = document.getElementById("themeIcon");
 
