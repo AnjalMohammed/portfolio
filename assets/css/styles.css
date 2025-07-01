@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+    transition: background 0.5s ease;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Background layer for gradient animation */
+.background-layer {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    background: linear-gradient(-45deg, #e0c3fc, #8ec5fc, #f9f9f9, #d0e6f6);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease infinite;
+    transition: background 1s ease;
+}
+
+body[data-theme="dark"] .background-layer {
+    background: linear-gradient(-45deg, #121212, #2e2e2e, #555555, #1a1a1a);
+    background-size: 400% 400%;
+    animation: gradientShift 5s ease infinite;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (max-width: 930px) {
+    #intro,
+    .about-section,
+    .timeline-section {
+        max-width: 90vw !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
