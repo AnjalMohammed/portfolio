@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Anjal Mohammed - Portfolio</title>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TM9PNZQW98"></script>
     <script>
@@ -14,7 +15,19 @@
 
         gtag('config', 'G-TM9PNZQW98');
     </script>
-    
+
+    <!-- Hotjar Tracking Code for https://anjalmohammed.netlify.app/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 6452639, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -57,28 +70,42 @@
                     <p class="text-lg text-gray-700 dark:text-gray-300">AI/ML Engineer | Full Stack Developer</p>
 
                     <div class="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-3">
+                        <!-- GitHub -->
                         <a href="https://github.com/AnjalMohammed" target="_blank" rel="noopener noreferrer"
                             aria-label="Visit GitHub profile of Anjal Mohammed"
+                            onclick="gtag('event', 'click', { event_category: 'Social', event_label: 'GitHub Profile' })"
                             class="flex items-center px-3 py-1 bg-gray-800 hover:bg-black text-white rounded-full text-sm shadow-sm transition-colors">
                             <i class="fab fa-github mr-2" aria-hidden="true"></i> GitHub
                         </a>
+
+                        <!-- LinkedIn -->
                         <a href="https://linkedin.com/in/mohammed-anjal" target="_blank" rel="noopener noreferrer"
                             aria-label="Visit LinkedIn profile of Anjal Mohammed"
+                            onclick="gtag('event', 'click', { event_category: 'Social', event_label: 'LinkedIn Profile' })"
                             class="flex items-center px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-full text-sm shadow-sm transition-colors">
                             <i class="fab fa-linkedin mr-2" aria-hidden="true"></i> LinkedIn
                         </a>
+
+                        <!-- Email -->
                         <a href="mailto:anjal.mohammed1994@gmail.com" aria-label="Send email to Anjal Mohammed"
+                            onclick="gtag('event', 'click', { event_category: 'Contact', event_label: 'Email Clicked' })"
                             class="flex items-center px-3 py-1 bg-red-600 hover:bg-red-700 text-white rounded-full text-sm shadow-sm transition-colors">
                             <i class="fas fa-envelope mr-2" aria-hidden="true"></i> Email Me
                         </a>
+
+                        <!-- Resume View -->
                         <a href="https://drive.google.com/file/d/1JyokqIabGntuLSA2BXS2oexII8IDrglc/view?usp=sharing"
                             target="_blank" rel="noopener noreferrer" aria-label="Open resume of Anjal Mohammed"
+                            onclick="gtag('event', 'click', { event_category: 'Resume', event_label: 'Resume View Link' })"
                             class="flex items-center px-3 py-1 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full text-sm shadow-sm transition-colors">
                             <i class="fas fa-file-alt mr-2" aria-hidden="true"></i> Resume
                         </a>
+
+                        <!-- Resume Download -->
                         <a href="https://drive.google.com/uc?export=download&id=1JyokqIabGntuLSA2BXS2oexII8IDrglc"
-                            aria-label="Download resume of Anjal Mohammed"
-                            class="text-xl text-emerald-600 hover:text-emerald-800 transition-colors" download>
+                            aria-label="Download resume of Anjal Mohammed" download
+                            onclick="gtag('event', 'click', { event_category: 'Resume', event_label: 'Resume Download' })"
+                            class="text-xl text-emerald-600 hover:text-emerald-800 transition-colors">
                             <i class="fas fa-download" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -117,15 +144,21 @@
                             A personalized music recommendation engine that suggests similar songs from a database based
                             on user input.
                         </p>
-                        <div class="flex justify-center gap-3">
+                        <div
+                            class="flex flex-wrap gap-3 sm:flex-row flex-col sm:justify-center justify-start items-center">
+                            <!-- Music Engine Live Demo -->
                             <a href="https://musicengine.up.railway.app" target="_blank" rel="noopener"
-                                class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm inline-flex items-center"
+                                onclick="gtag('event', 'click', { event_category: 'Project_View', event_label: 'MusicEngine Demo' })"
+                                class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm inline-flex items-center justify-center w-full sm:w-auto"
                                 aria-label="Live demo of Music Recommendation Engine">
                                 <i class="fas fa-external-link-alt mr-2"></i>Live Demo
                             </a>
+
+                            <!-- Music Engine Code -->
                             <a href="https://github.com/AnjalMohammed/MusicRecommendationEngine" target="_blank"
                                 rel="noopener"
-                                class="flex items-center px-3 py-1 bg-gray-800 hover:bg-black text-white rounded-md text-sm shadow-sm transition-colors"
+                                onclick="gtag('event', 'click', { event_category: 'Project', event_label: 'MusicEngine Code' })"
+                                class="flex items-center justify-center px-3 py-2 bg-gray-800 hover:bg-black text-white rounded-md text-sm shadow-sm transition-colors w-full sm:w-auto"
                                 aria-label="View source code on GitHub">
                                 <i class="fab fa-github mr-2"></i> View Code
                             </a>
@@ -167,15 +200,20 @@
                             A Streamlit web app that detects toxic or hate speech in text using a fine-tuned BERT model,
                             displaying predictions with confidence scores.
                         </p>
-                        <div class="flex justify-center gap-3">
+                        <div
+                            class="flex flex-wrap gap-3 sm:flex-row flex-col sm:justify-center justify-start items-center">
+                            <!-- Hate Speech Demo -->
                             <a href="https://hatemonitor.streamlit.app/" target="_blank" rel="noopener"
-                                class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm inline-flex items-center"
+                                onclick="gtag('event', 'click', { event_category: 'Project_View', event_label: 'Hate Speech Demo' })"
+                                class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm inline-flex items-center justify-center w-full sm:w-auto"
                                 aria-label="Live demo of Hate Speech Detector app">
                                 <i class="fas fa-external-link-alt mr-2"></i>Live Demo
                             </a>
+
+                            <!-- Hate Speech Code -->
                             <a href="https://github.com/AnjalMohammed/hateSpeechDetector" target="_blank" rel="noopener"
-                                class="flex items-center px-3 py-1 bg-gray-800 hover:bg-black text-white rounded-md text-sm shadow-sm transition-colors"
-                                aria-label="View GitHub repository of Hate Speech Detector">
+                                onclick="gtag('event', 'click', { event_category: 'Project', event_label: 'Hate Speech Code' })"
+                                class="flex items-center justify-center px-3 py-2 bg-gray-800 hover:bg-black text-white rounded-md text-sm shadow-sm transition-colors w-full sm:w-auto">
                                 <i class="fab fa-github mr-2"></i> View Code
                             </a>
                         </div>
